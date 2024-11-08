@@ -39,6 +39,15 @@
     left: 0px;
     margin-top: 50px;
 }
+.queMark {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 4px;
+    position: absolute;
+    left: 45%;
+    bottom: -50px;
+}
 button {
     background-color: black;
     color: white;
