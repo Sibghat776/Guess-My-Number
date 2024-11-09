@@ -13,7 +13,13 @@
         <div class="gameArea">
             <div class="top">
                 <button onclick="again()" id="again">Again !</button>
-                <p>< Between 1 and 20 ></p>
+                <div>
+                    <h4 style="text-align: center; margin-left: 18px;">Level : <span id="level">1</span></h4>
+                    <h1 style="text-align: center; margin-left: 18px;">Guess My Number</h1>
+                </div>
+                <p>
+                    < Between 1 and 20>
+                </p>
             </div>
 
             <div class="center">
@@ -22,14 +28,14 @@
 
             <div id="game">
                 <div class="left">
-                    <input type="number" id="userInput" placeholder="00">
+                    <input oninput="inputCheck()" type="number" id="userInput" placeholder="00">
                     <button>Check !</button>
                 </div>
                 <div class="right">
-                    <p>Start Guessing....</p>
+                    <p id="replaceableText">Start Guessing....</p>
                     <div id="scores">
-                        <div class="score">Score : 20</div>
-                        <div class="highestScore">Highest Score : 0</div>
+                        <div class="score">Score : <span id="score">20</span></div>
+                        <div class="highestScore">Highest Score : <span id="highScore">0</span></div>
                     </div>
                 </div>
             </div>
